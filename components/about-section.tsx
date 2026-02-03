@@ -7,7 +7,7 @@ export default function AboutSection() {
           <div className="relative">
             <div className="relative w-full h-80 rounded-3xl overflow-hidden shadow-xl bg-gradient-to-br from-accent/30 to-orange-300/30 flex items-center justify-center">
               <div className="text-center">
-                <p className="text-6xl font-bold text-accent">INFLUENCER</p>
+                <p className="text-6xl font-bold text-accent">DIGITAL</p>
                 <p className="text-foreground/60 mt-4">Marketing Excellence</p>
               </div>
             </div>
@@ -18,17 +18,17 @@ export default function AboutSection() {
             <div>
               <h2 className="heading-md mb-6">ABOUT URBAN TECH</h2>
               <p className="body-lg text-foreground/70 mb-6">
-                We're an influencer-led marketing agency helping brands create impactful campaigns through strategic partnerships, compelling content, and data-driven strategy.
+                We're a full-service digital marketing agency helping brands create impactful online presence through strategic web design, development, SEO, and data-driven marketing.
               </p>
               <p className="body-lg text-foreground/70">
-                Our influential voices that drive real engagement, trust, and measurable results for your brand.
+                Our expert team delivers innovative solutions that drive real engagement, trust, and measurable results for your brand.
               </p>
             </div>
 
             <div className="space-y-6">
               <div>
                 <h3 className="text-sm font-bold tracking-widest text-foreground mb-2 uppercase">► Our Approach</h3>
-                <p className="text-sm text-foreground/60">Strategic partnerships with authentic influencers</p>
+                <p className="text-sm text-foreground/60">Custom web development and design solutions</p>
               </div>
               <div>
                 <h3 className="text-sm font-bold tracking-widest text-foreground mb-2 uppercase">► Our Mission</h3>

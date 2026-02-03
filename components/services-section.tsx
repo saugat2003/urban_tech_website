@@ -25,45 +25,29 @@ export default function ServicesSection() {
 
   const services = [
     {
-      title: 'Digital Marketing',
-      description: 'Strategic campaigns across all digital channels',
-      color: 'from-blue-400 to-blue-600',
-      icon: '📱',
+      title: 'DIGITAL MARKETING',
+      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, facilis atque maxime natus porro odio totam veritatis repellendus optio nisl.',
+      number: '1',
     },
     {
-      title: 'SEO Optimization',
-      description: 'Boost your online visibility and rankings',
-      color: 'from-purple-400 to-purple-600',
-      icon: '🔍',
+      title: 'SEO',
+      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, facilis atque maxime natus porro odio totam veritatis repellendus optio nisl.',
+      number: '2',
     },
     {
-      title: 'Influencer Marketing',
-      description: 'Partner with authentic voices and creators',
-      color: 'from-pink-400 to-pink-600',
-      icon: '⭐',
+      title: 'WEB DESIGN',
+      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, facilis atque maxime natus porro odio totam veritatis repellendus optio nisl.',
+      number: '3',
     },
     {
-      title: 'Website Design & Development',
-      description: 'Modern, responsive web solutions for your brand',
-      color: 'from-orange-400 to-orange-600',
-      icon: '🎨',
-    },
-    {
-      title: 'UI/UX Design',
-      description: 'User-centered design that converts',
-      color: 'from-green-400 to-green-600',
-      icon: '✨',
-    },
-    {
-      title: 'Brand Strategy',
-      description: 'Build your brand identity and positioning',
-      color: 'from-red-400 to-red-600',
-      icon: '🎯',
+      title: 'UI/UX',
+      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, facilis atque maxime natus porro odio totam veritatis repellendus optio nisl.',
+      number: '4',
     },
   ];
 
   return (
-    <section ref={ref} id="services" className="w-full py-32 bg-white border-t border-border">
+    <section ref={ref} id="services" className="w-full py-32 bg-gray-50 border-t border-border">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-24">
           <h2 className="heading-xl mb-6">OUR SERVICES</h2>
@@ -72,28 +56,34 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className={`group relative h-80 rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 ${
+              className={`group relative bg-gray-900 rounded-2xl p-8 transition-all duration-500 ${
                 inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{
                 transitionDelay: `${index * 100}ms`,
               }}
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-90 group-hover:opacity-100 transition-opacity`} />
-
-              <div className="relative h-full p-8 flex flex-col justify-between text-white">
-                <div>
-                  <div className="text-5xl mb-4">{service.icon}</div>
-                  <h3 className="text-xl font-bold tracking-tight mb-2">{service.title}</h3>
-                </div>
-                <p className="text-sm text-white/85 leading-relaxed">{service.description}</p>
+              {/* Service Title with Blue First Letter */}
+              <div className="mb-6">
+                <h3 className="text-2xl font-bold text-white">
+                  <span className="text-blue-500">{service.title.charAt(0)}</span>
+                  {service.title.slice(1)}
+                </h3>
               </div>
-
-              <div className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-colors" />
+              
+              {/* Description */}
+              <p className="text-gray-300 text-sm leading-relaxed mb-8">
+                {service.description}
+              </p>
+              
+              {/* Number */}
+              <div className="absolute bottom-4 right-8">
+                <span className="text-6xl font-bold text-gray-700">{service.number}</span>
+              </div>
             </div>
           ))}
         </div>

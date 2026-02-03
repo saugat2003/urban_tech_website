@@ -5,10 +5,10 @@ import Image from 'next/image';
 export default function PortfolioSection() {
   const projects = [
     {
-      title: 'Shimmering Tanning Gel Campaign',
-      category: 'Influencer Marketing',
+      title: 'E-commerce Website Design',
+      category: 'Web Development',
       image: '/portfolio-1.jpg',
-      stat: 'Reach: 2.5M+',
+      stat: 'Conversion: +65%',
     },
     {
       title: 'Sunscreen SPF Product Launch',

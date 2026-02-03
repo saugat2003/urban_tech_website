@@ -5,9 +5,9 @@ import Image from 'next/image';
 export default function InsightsSection() {
   const insights = [
     {
-      title: 'Maximizing Influencer Impact',
-      excerpt: 'How to identify and partner with the right creators for your brand',
-      category: 'Marketing Strategy',
+      title: 'Maximizing SEO Impact',
+      excerpt: 'How to optimize your website for better search engine rankings',
+      category: 'SEO Strategy',
       image: '/insights-1.jpg',
     },
     {
@@ -15,6 +15,12 @@ export default function InsightsSection() {
       excerpt: 'Best practices for creating campaigns that drive real engagement',
       category: 'Digital Marketing',
       image: '/insights-2.jpg',
+    },
+    {
+      title: 'Modern Web Design Trends 2026',
+      excerpt: 'Discover the latest trends shaping the future of web design and development',
+      category: 'Web Design',
+      image: '/insights-1.jpg',
     },
   ];
 
@@ -24,7 +30,7 @@ export default function InsightsSection() {
         <div className="mb-24">
           <h2 className="text-6xl md:text-7xl font-bold text-foreground mb-8">New Insights</h2>
           <p className="text-foreground/60 max-w-2xl">
-            Latest thoughts and research on digital marketing, influencer partnerships, and brand growth.
+            Latest thoughts and research on digital marketing, web development, and brand growth.
           </p>
         </div>
 

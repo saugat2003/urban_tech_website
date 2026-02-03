@@ -7,8 +7,8 @@ import './globals.css'
 const spaceMono = Space_Mono({ weight: ['400', '700'], subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Urban Tech | Digital Marketing & Influencer Agency',
-  description: 'Urban Tech is a premier digital marketing agency specializing in influencer marketing, SEO, website design, UI/UX, and brand strategy. Elevate your brand with data-driven campaigns.',
+  title: 'Urban Tech | Digital Marketing & Web Development Agency',
+  description: 'Urban Tech is a premier digital marketing agency specializing in web design, development, SEO, UI/UX, and brand strategy. Elevate your brand with data-driven digital solutions.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -35,8 +35,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={`${spaceMono.className} antialiased`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${spaceMono.className} antialiased`} suppressHydrationWarning>
         {children}
         <Analytics />
       </body>
