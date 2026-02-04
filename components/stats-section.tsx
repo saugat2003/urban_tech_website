@@ -1,9 +1,9 @@
 export default function StatsSection() {
   const stats = [
-    { number: '109+', label: 'Campaigns' },
-    { number: '16+', label: 'Years Experience' },
+    { number: '25+', label: 'Campaigns' },
+    { number: '12+', label: 'Years Experience' },
     { number: '100%', label: 'Client Satisfaction' },
-    { number: '65+', label: 'Team Members' },
+    { number: '25+', label: 'Team Members' },
   ];
 
   return (

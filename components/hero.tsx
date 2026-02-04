@@ -54,7 +54,7 @@ export default function Hero({ scrollY }: HeroProps) {
           </div>
         </div>
 
-        {/* Right - Tilted Image with Parallax */}
+        {/* Right - Tilted YouTube Video with Parallax */}
         <div className="hidden md:flex flex-1 items-center justify-center h-full">
           <div
             className="relative w-96 h-96 md:w-full md:h-full flex items-center justify-center"
@@ -63,13 +63,13 @@ export default function Hero({ scrollY }: HeroProps) {
             }}
           >
             <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent rounded-3xl" />
-            <div className="relative w-80 h-96 rounded-2xl overflow-hidden shadow-2xl">
-              <Image
-                src="/hero-image.jpg"
-                alt="Urban Tech Digital Marketing"
-                fill
-                className="object-cover"
-                priority
+            <div className="relative w-[480px] h-[270px] rounded-2xl overflow-hidden shadow-2xl border-2 border-white/10">
+              <iframe
+                src="https://www.youtube.com/embed/4eIDBV4Mpek?autoplay=1&mute=1&loop=1&playlist=4eIDBV4Mpek&controls=0&modestbranding=1&rel=0"
+                title="Urban Tech Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
               />
             </div>
             {/* Floating elements for parallax effect */}

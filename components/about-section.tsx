@@ -23,6 +23,9 @@ export default function AboutSection() {
               <p className="body-lg text-foreground/70">
                 Our expert team delivers innovative solutions that drive real engagement, trust, and measurable results for your brand.
               </p>
+              <p className="body-lg text-foreground/70">
+                Moving from "Small to Giant" isn’t just about scaling—it’s about commanding market presence. We provide the strategic engine to propel emerging brands into industry leaders. Simultaneously, we refine "Good to Great" by auditing existing assets and injecting the excellence required to transform a functional business into an aspirational icon.
+              </p>
             </div>
 
             <div className="space-y-6">

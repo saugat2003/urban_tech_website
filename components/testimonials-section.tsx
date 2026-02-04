@@ -8,24 +8,24 @@ export default function TestimonialsSection() {
 
   const testimonials = [
     {
-      name: 'Leila Alexander',
-      title: 'Director of Brand Growth',
+      name: 'Rajesh Shrestha',
+      title: 'CEO, Techie',
       content:
         'Working with Urban Tech felt like having an in-house development team. Their web design and SEO expertise delivered exceptional results that exceeded all expectations.',
       rating: 5,
       avatar: '/client-avatar.jpg',
     },
     {
-      name: 'Marcus Johnson',
-      title: 'CEO of Fashion Hub',
+      name: 'Suman Karki',
+      title: 'Director, The Film Nepal',
       content:
         'Their strategic approach to web development and digital marketing transformed our online presence. The ROI was exceptional, and the team was professional throughout.',
       rating: 5,
       avatar: '/client-avatar.jpg',
     },
     {
-      name: 'Emma Wilson',
-      title: 'Brand Manager at LifeStyle',
+      name: 'Prakash Thapa',
+      title: 'Managing Director, Techie',
       content:
         'Urban Tech combined creative excellence with data-driven strategy. Our campaign exceeded all expectations and the collaboration was seamless.',
       rating: 5,

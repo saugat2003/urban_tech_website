@@ -26,22 +26,26 @@ export default function ServicesSection() {
   const services = [
     {
       title: 'DIGITAL MARKETING',
-      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, facilis atque maxime natus porro odio totam veritatis repellendus optio nisl.',
+      description:
+        'Full‑funnel digital marketing: paid search & social campaigns, email automation, and performance analytics to acquire high‑quality leads and maximize ROI.',
       number: '1',
     },
     {
       title: 'SEO',
-      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, facilis atque maxime natus porro odio totam veritatis repellendus optio nisl.',
+      description:
+        'Holistic SEO — technical audits, on‑page optimization, and content strategy — to increase organic visibility, rankings, and sustainable traffic growth.',
       number: '2',
     },
     {
       title: 'WEB DESIGN',
-      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, facilis atque maxime natus porro odio totam veritatis repellendus optio nisl.',
+      description:
+        'Responsive, conversion‑focused websites built with modern frameworks. Fast, accessible, and optimized for user journeys that drive signups and sales.',
       number: '3',
     },
     {
       title: 'UI/UX',
-      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam, facilis atque maxime natus porro odio totam veritatis repellendus optio nisl.',
+      description:
+        'User research, wireframes, and interactive prototypes leading to polished interfaces that improve engagement, reduce friction, and boost conversions.',
       number: '4',
     },
   ];
