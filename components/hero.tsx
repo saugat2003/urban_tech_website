@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import FloatingLines from './ui/FloatingLines';
 
@@ -8,7 +9,12 @@ interface HeroProps {
 }
 
 export default function Hero({ scrollY }: HeroProps) {
+  const [mounted, setMounted] = useState(false);
   const parallaxOffset = scrollY * 0.5;
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <section className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-black pt-20">
@@ -64,13 +70,19 @@ export default function Hero({ scrollY }: HeroProps) {
           >
             <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-transparent rounded-3xl" />
             <div className="relative w-[480px] h-[270px] rounded-2xl overflow-hidden shadow-2xl border-2 border-white/10">
-              <iframe
-                src="https://www.youtube.com/embed/4eIDBV4Mpek?autoplay=1&mute=1&loop=1&playlist=4eIDBV4Mpek&controls=0&modestbranding=1&rel=0"
-                title="Urban Tech Video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="absolute inset-0 w-full h-full"
-              />
+              {mounted ? (
+                <iframe
+                  src="https://www.youtube.com/embed/4eIDBV4Mpek?autoplay=1&mute=1&loop=1&playlist=4eIDBV4Mpek&controls=0&modestbranding=1&rel=0"
+                  title="Urban Tech Video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                />
+              ) : (
+                <div className="absolute inset-0 w-full h-full bg-gray-900 flex items-center justify-center">
+                  <div className="animate-pulse text-white">Loading...</div>
+                </div>
+              )}
             </div>
             {/* Floating elements for parallax effect */}
             <div

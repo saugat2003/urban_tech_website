@@ -25,7 +25,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="overflow-hidden bg-background">
+    <div className="overflow-hidden bg-background" suppressHydrationWarning>
       <Header />
       <Hero scrollY={scrollY} />
       <StatsSection />
