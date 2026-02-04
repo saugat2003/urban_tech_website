@@ -17,12 +17,7 @@ export default function AboutSection() {
           <div className="space-y-8">
             <div>
               <h2 className="heading-md mb-6">ABOUT URBAN TECH</h2>
-              <p className="body-lg text-foreground/70 mb-6">
-                We're a full-service digital marketing agency helping brands create impactful online presence through strategic web design, development, SEO, and data-driven marketing.
-              </p>
-              <p className="body-lg text-foreground/70">
-                Our expert team delivers innovative solutions that drive real engagement, trust, and measurable results for your brand.
-              </p>
+
               <p className="body-lg text-foreground/70">
                 Moving from "Small to Giant" isn’t just about scaling—it’s about commanding market presence. We provide the strategic engine to propel emerging brands into industry leaders. Simultaneously, we refine "Good to Great" by auditing existing assets and injecting the excellence required to transform a functional business into an aspirational icon.
               </p>
