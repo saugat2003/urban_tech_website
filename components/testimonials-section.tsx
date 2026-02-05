@@ -69,15 +69,7 @@ export default function TestimonialsSection() {
               </div>
             </div>
 
-            {/* Avatar - Right */}
-            <div className="hidden md:block relative w-24 h-24 lg:w-32 lg:h-32 rounded-2xl overflow-hidden flex-shrink-0">
-              <Image
-                src={testimonials[activeIndex].avatar || "/placeholder.svg"}
-                alt={testimonials[activeIndex].name}
-                fill
-                className="object-cover"
-              />
-            </div>
+
 
             {/* Navigation - Right */}
             <button

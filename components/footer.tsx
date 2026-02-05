@@ -72,6 +72,11 @@ export default function Footer() {
                   info@urbantech.com.np
                 </a>
               </p>
+              <p>
+                <a href="tel:+9779843583005" className="text-black/70 hover:text-black transition-colors duration-200">
+                  +977 984-358-3005
+                </a>
+              </p>
               <div className="flex gap-4">
                 <Link href="#" className="text-black/70 hover:text-black transition-colors duration-200">
                   Twitter
